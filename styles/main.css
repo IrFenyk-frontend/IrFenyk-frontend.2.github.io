@@ -1,0 +1,322 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+body {
+    background-color: #2c2d5b;
+    color: white;
+    font-family: 'Akrobat Semi';
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+header {
+    width: 100%;
+    height: 95px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 100px;
+    position: relative;
+}
+
+.mobile-menu{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    display: none;
+}
+
+.mobile-group{
+    width: 300px;
+    height: 300px;
+    background-color:#eee;
+    position: relative;
+    padding: 50px 0px 60px 50px;
+    display: none; 
+}
+
+.mobile-group li{
+    list-style: none;
+    margin-bottom: 15px; 
+}
+
+.mobile-group li a{
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+    
+}
+.mobile-icon img{
+    width: 24px;
+    height: 19px;
+}
+
+.mobile-icon:hover .mobile-group{
+    display: block;
+ }
+
+.navbar {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.icons {
+    width: 26%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.navbar-bottom {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.navbar-bottom .active {
+    color: #f4ff6a;
+}
+
+.navbar-bottom a {
+    color: #b0b93e;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Peace Sans';
+    letter-spacing: 1px;
+}
+
+.navbar-bottom a:hover {
+    color: #f4ff6a;
+}
+
+.content {
+    margin: 0 auto;
+    width: 60%;
+    padding: 90px 0 50px 50px;
+
+}
+
+.content h2 {
+    font-size: 40px;
+    margin-bottom: 90px;
+    font-family: 'Peace Sans';
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+.content h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Peace Sans';
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+.content ul {
+    margin-left: 16px;
+    list-style: disc;
+    margin-bottom: 50px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    margin-bottom: 40px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.content ul>li {
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer .icons {
+    width: 12%;
+}
+
+.copyright {
+    text-align: center;
+    color: #ddd;
+    margin-top: 40px;
+}
+
+.communication {
+    font-weight: bold;
+    margin: 30px auto 115px;
+    width: 100%;
+}
+
+.communication div {
+    margin-bottom: 30px;
+    vertical-align: middle;
+}
+
+.communication input {
+    border: 2px solid #999999;
+    padding: 8px 10px;
+    width: 40%;
+}
+
+.communication textarea {
+    border: 2px solid #999999;
+    padding: 8px 10px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.communication input[type="submit"] {
+    cursor: pointer;
+    width: 100px;
+    float: right;
+    background: -webkit-linear-gradient(top, #efefef, #ddd);
+    background: -moz-linear-gradient(top, #efefef, #ddd);
+    background: -ms-linear-gradient(top, #efefef, #ddd);
+    background: -o-linear-gradient(top, #efefef, #ddd);
+    background: linear-gradient(top, #efefef, #ddd);
+    color: #333;
+    font-family: 'Akrobat Semi';
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+    border: 2px solid #999999;
+}
+
+.communication input[type="submit"]:hover {
+    background: -webkit-linear-gradient(top, #eee, #ccc);
+    background: -moz-linear-gradient(top, #eee, #ccc);
+    background: -ms-linear-gradient(top, #eee, #ccc);
+    background: -o-linear-gradient(top, #eee, #ccc);
+    background: linear-gradient(top, #eee, #ccc);
+    border: 2px solid #bbb;
+}
+
+.communication input[type="submit"]:active {
+    background: -webkit-linear-gradient(top, #ddd, #aaa);
+    background: -moz-linear-gradient(top, #ddd, #aaa);
+    background: -ms-linear-gradient(top, #ddd, #aaa);
+    background: -o-linear-gradient(top, #ddd, #aaa);
+    background: linear-gradient(top, #ddd, #aaa);
+    border: 2px solid #999;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        width: 52%;
+    }
+    .icons {
+        width: 30%;
+    }
+    .content{
+        width: 70%;
+    }
+    .content h2 {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+    footer .icons {
+        width: 16%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav{
+        margin-top: 70px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    nav >.logo img{
+        width: 180px;
+        height: 55px;
+        margin-bottom: 30px;
+    }
+    .navbar {
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+     }
+    .content{
+        width: 100%;
+        padding: 60px 30px;
+    }
+    .content h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .content h3{
+        font-size: 26px;
+    }
+
+    footer .icons {
+        width: 26%;
+    }
+}
+
